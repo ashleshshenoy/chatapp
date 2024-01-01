@@ -12,7 +12,7 @@ const code = window.location.href.split('/').pop();
 chatRoomInput.value = code;
 
 
-const URL = "http://localhost:3000"
+const URL = window.location.origin
 
 const avatars = avatarContainer.children;
 for(let i = 0; i <avatars.length  ; i++){

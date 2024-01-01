@@ -7,12 +7,12 @@ const chatRoomInput = document.querySelector('#chatroom-input');
 const  chatRoomFeedback = document.querySelector('.chatroom-feedback');
 const avatarFeedback = document.querySelector('.avatar-feedback');
 let selectedAvatar = undefined;
+const URL = window.location.origin
 
 const code = window.location.href.split('/').pop();
 chatRoomInput.value = code;
 
 
-const URL = window.location.origin
 
 const avatars = avatarContainer.children;
 for(let i = 0; i <avatars.length  ; i++){

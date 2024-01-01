@@ -4,7 +4,7 @@ const api = express()
 const randomstring = require('randomstring');
 
 
-api.use(express.static(path.join(__dirname, ,"public")))
+api.use(express.static(path.join(__dirname,"public")))
 
 
 api.get("/createroom", (req, res) => {

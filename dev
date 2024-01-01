@@ -1,0 +1,11 @@
+create rooms
+    - stateless messaging 
+    - end to end encription 
+    - voice transmission over channels 
+
+ui : html css and boostrap 
+backend : express + socket.io 
+
+
+namespace : modulation of logic / application 
+rooms : modulation of socket connections groups

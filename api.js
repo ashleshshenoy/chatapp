@@ -4,7 +4,7 @@ const api = express()
 const randomstring = require('randomstring');
 
 
-api.use(express.static(path.join(__dirname, "..","public")))
+api.use(express.static(path.join(__dirname, ,"public")))
 
 
 api.get("/createroom", (req, res) => {
@@ -17,11 +17,11 @@ api.get("/createroom", (req, res) => {
 })
 
 api.get('/chat/:hash', (req, res) => {
-    return res.sendFile(path.join(__dirname,  "..",  "public", "chat.html"));
+    return res.sendFile(path.join(__dirname,   "public", "chat.html"));
 })
 
 api.get('/:hash?', (req, res) => {
-    return res.sendFile(path.join(__dirname, "..","public", "index.html"))
+    return res.sendFile(path.join(__dirname,"public", "index.html"))
 })
 
 

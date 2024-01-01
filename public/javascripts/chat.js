@@ -17,7 +17,7 @@ function generateMyMessage(message, avatarImage){
       <div class="p-3   me-3 border word"  style="border-radius: 15px; background-color: #fbfbfb;">
         <p class="small mb-0">${message}</p>
       </div>
-        <img src="/static/images/ava${avatarImage}-bg.png"
+        <img src="/images/ava${avatarImage}-bg.png"
         alt="avatar 1" style="width: 45px; height: 100%;">
     </div>`
     return res
@@ -30,7 +30,7 @@ function generateMyMessage(message, avatarImage){
 function generateOthersMessage(message,avatarName, avatarImage){
     const res = `      
     <div class="d-flex flex-row justify-content-start mb-4">
-      <img src="/static/images/ava${avatarImage}-bg.png"
+      <img src="/images/ava${avatarImage}-bg.png"
       alt="avatar 1" style="width: 45px; height: 100%;">
       <div class="p-3 pt-2 ms-3 word"  style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
         <span><b>${avatarName}</b></span>

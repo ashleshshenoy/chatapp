@@ -1,5 +1,6 @@
 #chat1{
     height: 100vh;
+    box-sizing: border-box;
 }
 #chat1 .form-outline .form-control~.form-notch div {
     pointer-events: none;

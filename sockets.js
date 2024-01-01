@@ -4,7 +4,7 @@ function listen(io){
 
         socket.on("join", (avatarName, avatarImage, code)=>{
             socket.join(code);
-            console.log(avatarName + " joined the chat at " + code )
+            socket.to(code).emit("newuserjoin",avatarName)
         })
 
         socket.on("message", (message, avatarName, avatarImage,code)=>{
